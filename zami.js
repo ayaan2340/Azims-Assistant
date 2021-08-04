@@ -6,6 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.author.username == 'zamiboy')
+    {
+        message.channel.send('Shut up and do your homework');
+    }
     if (message.content.includes('azim'))
     {
         message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
@@ -25,4 +29,4 @@ client.on('message', message => {
 
 })
 
-client.login('ODcyMzE0NzQzNDc2NjA0OTgx.YQoEaQ.VZDrlWTZxrH1vnXFWQto51sEfSg')
+client.login(process.env.token);
