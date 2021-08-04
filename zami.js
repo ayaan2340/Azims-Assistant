@@ -6,6 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.author == client.user) {
+        return;
+    }
+    
     var newmessage = message.content.toLowerCase();
     if (message.author.username == 'zamiboy')
     {
