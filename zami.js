@@ -49,6 +49,6 @@ function reply (message)
     responses[8] = 'Sorry, Azim already went outside today.';
     responses[9] = 'Sorry, Azim is fulfilling his prophecy. He is sleeping.';
     console.log(responses);
-    return responses[Math.random() * 9];
+    return responses[Math.round(Math.random() * 9)];
 }
 client.login(process.env.token);
