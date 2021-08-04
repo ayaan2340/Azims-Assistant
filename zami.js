@@ -6,23 +6,24 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    var newmessage = message.content.toLowerCase();
     if (message.author.username == 'zamiboy')
     {
         message.channel.send('Shut up and do your homework');
     }
-    if (message.content.includes('azim'))
+    if (newmessage.includes('azim'))
     {
         message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
     }
-    if (message.content.includes('@zamiboy'))
+    if (newmessage.includes('@zamiboy'))
+    {
+        newmessage.send('Sorry, Azim is busy and cannot talk or come to any event.');
+    }
+    else if (newmessage.includes('zamiboy'))
     {
         message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
     }
-    else if (message.content.includes('zamiboy'))
-    {
-        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
-    }
-    else if (message.content.includes('zami'))
+    else if (newmessage.includes('zami'))
     {
         message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
     }
