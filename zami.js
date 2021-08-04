@@ -51,4 +51,5 @@ function reply (message)
 
     return responses[Math.round(Math.random() * 9)];
 }
+
 client.login(process.env.token);
