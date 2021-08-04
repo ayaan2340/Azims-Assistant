@@ -44,11 +44,11 @@ function reply (message)
     responses[3] = 'Sorry, Azim has ' + (Math.random() * 30) + ' hours of homework remaining.';
     responses[4] = 'Sorry, Azim is eating food, so he is not available for the next 3 hours until he finishes watching his twitch stream.';
     responses[5] = 'Sorry, Azim is in hibernation; call back in 4 months.';
-    responses[6] = 'Sorry, Azim had a burritor for lunch.';
+    responses[6] = 'Sorry, I do not get paid by Azim (please send help).';
     responses[7] = 'Sorry, Azim does not feel like having fun right now.';
     responses[8] = 'Sorry, Azim already went outside today.';
     responses[9] = 'Sorry, Azim is fulfilling his prophecy. He is sleeping.';
-    console.log(responses);
+
     return responses[Math.round(Math.random() * 9)];
 }
 client.login(process.env.token);
