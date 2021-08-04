@@ -1,0 +1,22 @@
+{
+  "name": "zamiboy",
+  "version": "1.0.0",
+  "description": "Zamiboy is busy",
+  "main": "zami.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayaan2340/zamiboy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayaan2340/zamiboy/issues"
+  },
+  "homepage": "https://github.com/ayaan2340/zamiboy#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
