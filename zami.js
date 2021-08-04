@@ -39,7 +39,7 @@ function reply (message)
 {
     const responses = [];
     responses[0] = 'Sorry, Azim is busy and cannot talk or come to any event.';
-    responses[1] = "Sorry, Azim is only available to have intellectual converstations with individuals in possession of a Master's Degree or higher.";
+    responses[1] = "Sorry, Azim is only available to have intellectual conversations with individuals in possession of a Master's Degree or higher.";
     responses[2] = 'Sorry, Azim has reached his fun limit for the week.'
     responses[3] = 'Sorry, Azim has ' + (Math.random() * 30) + ' hours of homework remaining.';
     responses[4] = 'Sorry, Azim is eating food, so he is not available for the next 3 hours until he finishes watching his twitch stream.';
