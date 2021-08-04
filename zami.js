@@ -9,9 +9,9 @@ client.on('message', message => {
     if (message.author == client.user) {
         return;
     }
-    
+
     var newmessage = message.content.toLowerCase();
-    if (message.author.username == 'zamiboy')
+    if (message.author.username === 'zamiboy')
     {
         message.channel.send('Shut up and do your homework');
     }
@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     if (newmessage.includes('@zamiboy'))
     {
-        newmessage.send('Sorry, Azim is busy and cannot talk or come to any event.');
+        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
     }
     else if (newmessage.includes('zamiboy'))
     {
