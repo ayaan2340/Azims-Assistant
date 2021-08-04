@@ -11,25 +11,26 @@ client.on('message', message => {
     }
 
     var newmessage = message.content.toLowerCase();
+    response = reply(message);
     if (message.author.username === 'zamiboy')
     {
         message.channel.send('Shut up and do your homework');
     }
     if (newmessage.includes('azim'))
     {
-        message.channel.send(reply(message));
+        message.channel.send(response);
     }
     if (newmessage.includes('@zamiboy'))
     {
-        message.channel.send(reply(message));
+        message.channel.send(response);
     }
     else if (newmessage.includes('zamiboy'))
     {
-        message.channel.send(reply(message));
+        message.channel.send(response);
     }
     else if (newmessage.includes('zami'))
     {
-        message.channel.send(reply(message));
+        message.channel.send(response);
     }
 
 });
@@ -47,7 +48,7 @@ function reply (message)
     responses[7] = 'Sorry, Azim does not feel like having fun right now.';
     responses[8] = 'Sorry, Azim already went outside today.';
     responses[9] = 'Sorry, Azim is fulfilling his prophecy. He is sleeping.';
-
+    console.log(responses);
     return responses[Math.random() * 9];
 }
 client.login(process.env.token);
