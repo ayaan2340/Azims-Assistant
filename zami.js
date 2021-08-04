@@ -1,6 +1,6 @@
 const {Client} = require('discord.js');
 const client = new Client()
-
+const Math = require('math');
 client.on('ready', () => {
     console.log('Azim is awake!');
 });
@@ -17,21 +17,37 @@ client.on('message', message => {
     }
     if (newmessage.includes('azim'))
     {
-        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
+        message.channel.send(reply(message));
     }
     if (newmessage.includes('@zamiboy'))
     {
-        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
+        message.channel.send(reply(message));
     }
     else if (newmessage.includes('zamiboy'))
     {
-        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
+        message.channel.send(reply(message));
     }
     else if (newmessage.includes('zami'))
     {
-        message.channel.send('Sorry, Azim is busy and cannot talk or come to any event.');
+        message.channel.send(reply(message));
     }
 
-})
+});
 
+function reply (message) 
+{
+    const responses = [];
+    responses[0] = 'Sorry, Azim is busy and cannot talk or come to any event.';
+    responses[1] = "Sorry, Azim is only available to have intellectual converstations with individuals in possession of a Master's Degree or higher.";
+    responses[2] = 'Sorry, Azim has reached his fun limit for the week.'
+    responses[3] = 'Sorry, Azim has ' + (Math.random() * 30) + ' hours of homework remaining.';
+    responses[4] = 'Sorry, Azim is eating food, so he is not available for the next 3 hours until he finishes watching his twitch stream.';
+    responses[5] = 'Sorry, Azim is in hibernation; call back in 4 months.';
+    responses[6] = 'Sorry, Azim had a burritor for lunch.';
+    responses[7] = 'Sorry, Azim does not feel like having fun right now.';
+    responses[8] = 'Sorry, Azim already went outside today.';
+    responses[9] = 'Sorry, Azim is fulfilling his prophecy. He is sleeping.';
+
+    return responses[Math.random * 9];
+}
 client.login(process.env.token);
