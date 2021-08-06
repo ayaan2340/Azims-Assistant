@@ -26,6 +26,11 @@ responses[9] = {text: 'Sorry, Azim is fulfilling his prophecy. He is sleeping.',
 //     });
 //     console.log(responses[i].url);
 // }
+// console.log(googleTTS.getAudioUrl('Sorry, Azim has a shit ton of homework remaining', {
+//     lang: 'en',
+//     slow: false,
+//     host:'http://translate.google.com',
+//     }));
 
 client.on('ready', () => {
     console.log('Azim is awake!');
@@ -107,4 +112,4 @@ function speech (name, channel, connection)
     {return(error);}
 }
 
-client.login('ODcyMzE0NzQzNDc2NjA0OTgx.YQoEaQ.1VNNAhQ6O8o1N5c6T6k14pRz3Gg');
+client.login(process.env.token);
