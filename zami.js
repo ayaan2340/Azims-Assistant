@@ -68,6 +68,7 @@ client.on('message', message => {
                         {
                             guild.joined = true;
                             speech(response.name, channel, connect);
+                            guild.joined = false;
                         }
                     });
                 }
