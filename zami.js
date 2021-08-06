@@ -3,7 +3,6 @@ const client = new Client()
 const Math = require('math');
 const googleTTS = require('google-tts-api');
 const path = require('path');
-const { OpusEncoder } = require('@discordjs/opus');
 
 var off = false;
 const responses = [];

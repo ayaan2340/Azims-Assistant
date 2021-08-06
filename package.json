@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ayaan2340/zamiboy#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.5.3",
     "discord.js": "^12.5.3",
     "google-tts-api": "^2.0.2",
     "math": "0.0.3"
