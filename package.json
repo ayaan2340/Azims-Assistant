@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ayaan2340/zamiboy#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "math": "0.0.3"
+    "math": "0.0.3",
+    "say": "^0.16.0"
   }
 }

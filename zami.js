@@ -1,6 +1,8 @@
 const {Client} = require('discord.js');
 const client = new Client()
 const Math = require('math');
+const say = require('say');
+
 client.on('ready', () => {
     console.log('Azim is awake!');
 });
@@ -48,6 +50,12 @@ function reply (message)
     responses[7] = 'Sorry, Azim does not feel like having fun right now.';
     responses[8] = 'Sorry, Azim already went outside today.';
     responses[9] = 'Sorry, Azim is fulfilling his prophecy. He is sleeping.';
+
+    for (let i = 0; i < responses.length; i++) 
+    {
+        say.export(responses[i], './Audio/' + i + ".wav");
+    }
+    say.export('Shut up and do your homework', './Audio/spam.wav');
 
     return responses[Math.round(Math.random() * 9)];
 }
