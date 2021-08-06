@@ -1,7 +1,7 @@
 const {Client, TeamMember} = require('discord.js');
 const client = new Client()
 const Math = require('math');
-// const googleTTS = require('google-tts-api');
+const googleTTS = require('google-tts-api');
 const path = require('path');
 
 var off = false;
@@ -106,4 +106,4 @@ function speech (name, channel, connection)
     {return(error);}
 }
 
-client.login(process.env.token);
+client.login('ODcyMzE0NzQzNDc2NjA0OTgx.YQoEaQ.1VNNAhQ6O8o1N5c6T6k14pRz3Gg');
